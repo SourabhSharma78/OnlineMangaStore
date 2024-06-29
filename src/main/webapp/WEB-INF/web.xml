@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+	<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="https://jakarta.ee/xml/ns/jakartaee"
+		xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+		id="WebApp_ID" version="6.0">
+		<display-name>bookstore</display-name>
+		<welcome-file-list>
+			<welcome-file>index.html</welcome-file>
+			<welcome-file>index.jsp</welcome-file>
+			<welcome-file>index.htm</welcome-file>
+			<welcome-file>default.html</welcome-file>
+			<welcome-file>default.jsp</welcome-file>
+			<welcome-file>default.htm</welcome-file>
+		</welcome-file-list>
+		<servlet>
+			<description></description>
+			<display-name>LogoutServlet</display-name>
+			<servlet-name>LogoutServlet</servlet-name>
+			<servlet-class>
+				com.Ebook.servlet.LogoutServlet
+			</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>LogoutServlet</servlet-name>
+			<url-pattern>/log-out</url-pattern>
+		</servlet-mapping>
+		<servlet>
+			<description></description>
+			<display-name>loginservlet</display-name>
+			<servlet-name>loginservlet</servlet-name>
+			<servlet-class>
+				com.Ebook.servlet.loginservlet
+			</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>loginservlet</servlet-name>
+			<url-pattern>/user-login</url-pattern>
+		</servlet-mapping>
+		<servlet>
+			<description></description>
+			<display-name>AddToCartServlet</display-name>
+			<servlet-name>AddToCartServlet</servlet-name>
+			<servlet-class>
+				com.Ebook.servlet.AddToCartServlet
+			</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>AddToCartServlet</servlet-name>
+			<url-pattern>/add-to-cart</url-pattern>
+		</servlet-mapping>
+		<servlet>
+			<description></description>
+			<display-name>QuantityIncDecServletv</display-name>
+			<servlet-name>QuantityIncDecServlet</servlet-name>
+			<servlet-class>
+				com.Ebook.servlet.QuantityIncDecServlet
+			</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>QuantityIncDecServlet</servlet-name>
+			<url-pattern>/quantity-inc-dec</url-pattern>
+		</servlet-mapping>
+		<servlet>
+			<description></description>
+			<display-name>RemoveFromCartServlet</display-name>
+			<servlet-name>RemoveFromCartServlet</servlet-name>
+			<servlet-class>
+				com.Ebook.servlet.RemoveFromCartServlet
+			</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>RemoveFromCartServlet</servlet-name>
+			<url-pattern>/remove-from-cart</url-pattern>
+		</servlet-mapping>
+	</web-app>
+</element>
